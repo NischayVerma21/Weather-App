@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="parent">
+    <div class="conatiner">
+        <h1>Weather</h1>
+        <div>
+            <input type="text" id="city" class="city" placeholder="Enter Your City Name">
+            <button onclick="fetchData()">Search</button>
+            <div class="info">
+                <h2 id="name"></h2>
+                <div class="content main">
+                    <span><p id="temp"></p></span><img src="" alt="img" id="sky">
+                </div>
+                <div class="secondary">
+                    <div class="sContent">
+                        <img src="Images/wind.png" id="secImg"><h4 class="fetch" id="wind"> </h4>
+                    </div>
+                    <div class="sContent">
+                        <img src="Images/humidity.png" id="secImg1"><h4 class="fetch" id="humidity"></h4>
+                    </div>
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script src="script.js"></script>
+</html>
